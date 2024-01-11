@@ -1,0 +1,8 @@
+# ignore auth folder and .env file
+auth
+.env
+__pycache__
+train
+other_stuff.txt
+parts
+.db

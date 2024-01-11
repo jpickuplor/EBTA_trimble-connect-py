@@ -1,0 +1,94 @@
+[
+  {
+    "isMaster": true,
+    "origin": "//app.connect.trimble.com",
+    "location": "northAmerica",
+    "serviceRegion": "na",
+    "awsRegion": "us-east-1",
+    "map-bbox": [
+      -114.2871,
+      29.5313,
+      -80.8298,
+      49.9512
+    ],
+    "tc-api": "https://app.connect.trimble.com/tc/api/2.0/",
+    "objects-sync-api": "https://objsync-api.connect.trimble.com/",
+    "org-api": "https://org-api.us-east-1.connect.trimble.com/v1/",
+    "pset-api": "https://pset-api.us-east-1.connect.trimble.com/v1/",
+    "projects-api": "https://projects-api.connect.trimble.com/v1/",
+    "wopi-api": "https://wopi-api.connect.trimble.com/v1/",
+    "batch-api": "https://batch-api.connect.trimble.com/v1/",
+    "user-api": "https://user-api.connect.trimble.com/v1/",
+    "model-api": "https://model-api11.connect.trimble.com/",
+    "topic-api": "https://open11.connect.trimble.com/"
+  },
+  {
+    "isMaster": false,
+    "origin": "//app21.connect.trimble.com",
+    "location": "europe",
+    "serviceRegion": "eu",
+    "awsRegion": "eu-west-1",
+    "map-bbox": [
+      -7.0313,
+      42.0329,
+      27.2461,
+      53.4302
+    ],
+    "tc-api": "https://app21.connect.trimble.com/tc/api/2.0/",
+    "objects-sync-api": "https://objsync-api-eu.connect.trimble.com/",
+    "org-api": "https://org-api.eu-west-1.connect.trimble.com/v1/",
+    "pset-api": "https://pset-api.eu-west-1.connect.trimble.com/v1/",
+    "projects-api": "https://projects-api-eu.connect.trimble.com/v1/",
+    "wopi-api": "https://wopi-api-eu.connect.trimble.com/v1/",
+    "batch-api": "https://batch-api-eu.connect.trimble.com/v1/",
+    "user-api": "https://user-api-eu.connect.trimble.com/v1/",
+    "model-api": "https://model-api21.connect.trimble.com/",
+    "topic-api": "https://open21.connect.trimble.com/"
+  },
+  {
+    "isMaster": false,
+    "origin": "//app31.connect.trimble.com",
+    "location": "asia",
+    "serviceRegion": "ap",
+    "awsRegion": "ap-southeast-1",
+    "map-bbox": [
+      56.7862,
+      13.4761,
+      179.2969,
+      73.3371
+    ],
+    "tc-api": "https://app31.connect.trimble.com/tc/api/2.0/",
+    "objects-sync-api": "https://objsync-api-ap.connect.trimble.com/",
+    "org-api": "https://org-api.ap-southeast-1.connect.trimble.com/v1/",
+    "pset-api": "https://pset-api.ap-southeast-1.connect.trimble.com/v1/",
+    "projects-api": "https://projects-api-ap.connect.trimble.com/v1/",
+    "wopi-api": "https://wopi-api-ap.connect.trimble.com/v1/",
+    "batch-api": "https://batch-api-ap.connect.trimble.com/v1/",
+    "user-api": "https://user-api-ap.connect.trimble.com/v1/",
+    "model-api": "https://model-api31.connect.trimble.com/",
+    "topic-api": "https://open31.connect.trimble.com/"
+  },
+  {
+    "isMaster": false,
+    "origin": "//app32.connect.trimble.com",
+    "location": "australia",
+    "serviceRegion": "ap2",
+    "awsRegion": "ap-southeast-2",
+    "map-bbox": [
+      114.0485,
+      -44.8095,
+      153.3395,
+      -9.1669
+    ],
+    "tc-api": "https://app32.connect.trimble.com/tc/api/2.0/",
+    "objects-sync-api": "https://objsync-api-ap2.connect.trimble.com/",
+    "org-api": "https://org-api.ap-southeast-2.connect.trimble.com/v1/",
+    "pset-api": "https://pset-api.ap-southeast-2.connect.trimble.com/v1/",
+    "projects-api": "https://projects-api-ap2.connect.trimble.com/v1/",
+    "wopi-api": "https://wopi-api-ap2.connect.trimble.com/v1/",
+    "batch-api": "https://batch-api-ap2.connect.trimble.com/v1/",
+    "user-api": "https://user-api-ap2.connect.trimble.com/v1/",
+    "model-api": "https://model-api32.connect.trimble.com/",
+    "topic-api": "https://open32.connect.trimble.com/"
+  }
+]
