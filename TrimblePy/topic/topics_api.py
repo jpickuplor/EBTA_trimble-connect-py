@@ -255,7 +255,7 @@ class TopicApi:
             view_endpoint = f"{endpoint}/{issue_guid}/viewpoints"
             view_response = requests.post(view_endpoint, json=view_dict, headers=headers)
             if view_response.ok:
-                return "Issue and viewpoint created successfully"
+                return issue_response.json(), view_response.json()
             else:
                 return f"Failed to create viewpoint: {view_response.content}"
         else:
@@ -284,6 +284,19 @@ class TopicApi:
             return "Issue and viewpoint created successfully"
         else:
             return f"Failed to create viewpoint: {view_response.content}"
+
+    def update_files(self, topic):
+        # We need to create an instance of Topic and Viewpoint from the data provided
+        headers = self.headers | {"Content-Type": "application/json"}
+        # PUT Projects/{projectId}/Topics/{topicId}/files 
+        url = f"{self.BASE_URL}projects/{self.project_id}/topics/{topic.guid}/files"
+        files = topic.files
+        response = requests.put(url, json=files, headers=headers)
+        if response.ok:
+            return "Files updated successfully"
+        else:
+            return f"Failed to update files: {response.content}"
+        
 
 
 class Topic:
@@ -389,7 +402,12 @@ class Topic:
             'description': self.description,
             # 'viewpoint' attribute should be handled differently,
             # as it's a complex structure.
-            'files': self.files,
+            # 'files': self.files,
+        }
+    
+    def file_dict(self):
+        return {
+            self.files
         }
     
     def __repr__(self):

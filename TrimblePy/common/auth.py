@@ -53,6 +53,7 @@ class Authentication:
         'ap': Asia Pacific
         'ap2': Australia
         '''
+        selected_region = selected_region.lower()
         response = requests.get('https://app31.connect.trimble.com/tc/api/2.0/regions', headers={"accept": "application/json"})
         data = response.json()
         for region_info in data:

@@ -50,6 +50,17 @@ class TrimbleFileApi:
             parentId = id_to_parent.get(parentId)
         return '/'.join(path)
 
+    def download(self, id):
+        file_download_url = f"{self.BASE_URL}files/fs/{id}/downloadurl"
+        res = requests.get(file_download_url, headers=self.headers)
+        file = requests.get(res.json()['url'],headers=self.headers)
+        return file.content
+    
+    def download_url(self, id):
+        file_download_url = f"{self.BASE_URL}files/fs/{id}/downloadurl"
+        res = requests.get(file_download_url, headers=self.headers)
+        return res.json()['url']
+
     def get_files(self):
         print("Getting File Snapshot From Trimble...")
         fs = self.get_file_snapshot()
@@ -130,6 +141,11 @@ class TrimbleFileApi:
             if data:
                 depth += 1
         return data_objects
+    
+    def get_views(self):
+        url = f'{self.BASE_URL}views?projectId={self.project_id}'
+        response = requests.get(url, headers=self.headers)
+        return response.json()
 
     # /projects/{projectId}/users
     def get_project_users(self):
