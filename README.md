@@ -1,4 +1,5 @@
 # Trimble Connect APIs
+## (PLEASE NOTE - THIS REPOSITORY IS NOT FREQUENTLY MAINTAINED AND PURELY SERVES AS A SET OF USEFUL EXAMPLES)
 
 This example demonstrates how to interact with the Trimble Connect Model API using the `TrimblePy` Python package.
 
